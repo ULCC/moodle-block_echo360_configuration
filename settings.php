@@ -44,9 +44,6 @@ if ($ADMIN->fulltree) {
     
     // Trusted System Consumer Secret
     $settings->add(new admin_setting_configtext('block_echo360_configuration_trusted_system_consumer_secret', get_string('trusted_system_consumer_secret', 'block_echo360_configuration'), get_string('trusted_system_consumer_secret_description', 'block_echo360_configuration'), get_string('default_trusted_system_consumer_secret', 'block_echo360_configuration'), PARAM_TEXT));
-
-    // Security Realm
-    $settings->add(new admin_setting_configtext('block_echo360_configuration_security_realm', get_string('security_realm', 'block_echo360_configuration') . ' ' . $OUTPUT->help_icon('security_realm', 'block_echo360_configuration'), get_string('security_realm_description', 'block_echo360_configuration'), get_string('default_security_realm', 'block_echo360_configuration'), PARAM_TEXT));
     
     // Heading
     $settings->add(new admin_setting_heading('block_echo360_configuration_moodle_course_mapping_details_heading', get_string('moodle_course_mapping_details', 'block_echo360_configuration'), get_string('moodle_course_mapping_details_description', 'block_echo360_configuration')));

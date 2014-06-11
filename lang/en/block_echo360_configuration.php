@@ -28,7 +28,7 @@
     $string['echosystem_connection_details'] = "Echo360 EchoSystem Connection Details";
     $string['echosystem_connection_details_description'] = "Enter the connection details for the EchoSystem Server that this Moodle installation will communicate with. The Trusted System Consumer Key and Trusted System Consumer Secret can be obtained from the EchoSystem Web Administration Interface at &quot;Configuration &#8594; Trusted Systems&quot;.";
     $string['echosystem_url'] = "EchoSystem URL";
-    $string['default_echosystem_url'] = "http://echosystem.your.institution.edu:8080/";
+    $string['default_echosystem_url'] = "https://echosystem.your.institution.edu:8443/ if you are using all HTTPS content security, http://<same>:8080 if using HTTP content security.";
     $string['echosystem_url_description'] = "The full URL to your EchoSystem installation including the protocol (http or https) and port number.";
     $string['trusted_system_consumer_key'] = "Trusted System Consumer Key";
     $string['default_trusted_system_consumer_key'] = "";
@@ -49,10 +49,6 @@
     $string['moodle_student_perm'] = "Student";
     $string['default_moodle_student_perm'] = "moodle/grade:view";
     $string['moodle_student_perm_description'] = "This is the minimum capability required in Moodle to be recognised as a student in EchoSystem. If a user does not have at least this capability in the course that this block is placed in, they will not be allowed to access the EchoSystem.";
-    $string['security_realm'] = "Security Realm";
-    $string['security_realm_help'] = "This is the security-realm which is used for non-instructor users to further qualify the user name.  Two non-instructor users with the same user name and different realms will be considered different users by the EchoSystem.  If you are only using one method of authentication to the EchoSystem, then realm can have any arbitrary value. If you are using  multiple authentication providers (such as a seamless tool, and LDAP), but the same user name represents the same individual across authentication providers, then you should use the same realm for all authentication providers. If this is not true, then providers in which a user name represents the same user should use the same realm.";
-    $string['default_security_realm'] = "default";
-    $string['security_realm_description'] = "The security realm used by EchoSystem to identify unique users from separate systems.";
 
     // This is the global plugin name
     $string['pluginname'] = $string['blockname'] = "Echo360 Configuration";
